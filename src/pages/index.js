@@ -22,7 +22,7 @@ const FashionOne = () => {
   const { homepage } = useSelector((state) => state.product);
 
   async function submitFn() {
-    console.log(process.env.NEXT_PUBLIC_URL, "asta eeeeeeeeeeeeeeeeeeee");
+    console.log(`${process.env.NEXT_PUBLIC_URL}/api/products`, "asta eeeeeeeeeeeeeeeeeeee");
     const res = await axios.get(`${process.env.NEXT_PUBLIC_URL}/api/products`);
     dispatch(setHomepage(res.data));
   }
