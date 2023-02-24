@@ -1,0 +1,149 @@
+[
+  {
+    "id": "1",
+    "name": "Maximilian Schmidt",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img1.jpg",
+    "content": "The selection of laptops was great, and I was able to find the perfect one for my needs. Shipping was fast, and the laptop arrived in perfect condition. I highly recommend buying from this website!"
+  },
+  {
+    "id": "2",
+    "name": "Tobias Wagner",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img2.jpg",
+    "content": "I couldn't be happier with my purchase from this website. The laptop I bought was exactly as described, and it has exceeded my expectations in terms of performance. The website's customer service was also top-notch - they were quick to answer my questions and provide assistance when I needed it. I'll definitely be a returning customer!"
+  },
+  {
+    "id": "3",
+    "name": "Emilia Müller",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img3.jpg",
+    "content": "The descriptions of the laptops were clear and easy to understand, and I was able to find a laptop that fit my needs perfectly. The laptop arrived quickly and was in great condition. I highly recommend this website for anyone looking to buy a laptop."
+  },
+  {
+    "id": "4",
+    "name": "Johanna Keller",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "The selection was fantastic, and the prices were very reasonable. The website was easy to navigate, and the checkout process was smooth and hassle-free. I was kept informed about the status of my order throughout the shipping process, and the laptop arrived on time and in perfect condition. I highly recommend this website!"
+  },
+  {
+    "id": "5",
+    "name": "William Cooper",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "I was blown away by the quality of service and the selection of laptops available on this website. The laptop I purchased has been a game-changer for me - it's fast, powerful, and exactly what I needed. The shipping was lightning-fast, and the laptop arrived well-packaged and in perfect condition. I'm so glad I found this website and will definitely be buying from them again in the future."
+  },
+  {
+    "id": "6",
+    "name": "Henry Parker",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "I recently purchased an iPhone from this website and I couldn't be happier! The ordering process was simple and the phone arrived quickly and in perfect condition. I would definitely recommend this website to anyone looking to buy a phone online."
+  },
+  {
+    "id": "7",
+    "name": "Oliver Watson",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "I have purchased multiple phones from this website and have been blown away by the quality and value every time. The prices are unbeatable and the selection is great. I recommend this website to anyone who is looking for a new phone."
+  },
+  {
+    "id": "8",
+    "name": "James Mitchell",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "I was looking for a new phone and came across this website. I was initially drawn in by the competitive prices, but was pleasantly surprised by the high level of customer service I received. The phone arrived quickly and was exactly as described. I would definitely buy from this website again."
+  },
+  {
+    "id": "9",
+    "name": "Charlotte Knight",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "This is my second Samsung phone from this website and once again, I'm extremely satisfied with my purchase. The customer service is top-notch and the phone arrived quickly and in perfect condition. I highly recommend this site for all your phone needs."
+  },
+  {
+    "id": "10",
+    "name": "Lucy Davies",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "I've always been an iPhone fan and this website had the best deal on the latest model. The ordering process was simple and the phone arrived in perfect condition. I'm very happy with my purchase and will definitely be back for my next upgrade."
+  },
+  {
+    "id": "11",
+    "name": "Louis Dupont",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "This is by far the best place to buy an iPhone. The selection is great and the prices can't be beat. The customer service team is also very knowledgeable and helped me find the perfect phone for my needs."
+  },
+  {
+    "id": "12",
+    "name": "Antoine Martin",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "I was able to snag the best deal on my new phone by using ETH to purchase it. I couldn't believe how easy it was and how much money I saved. Thanks to this website for accepting cryptocurrency as payment!"
+  },
+  {
+    "id": "13",
+    "name": "Alexandre Moreau",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "I've been hesitant to use cryptocurrency for purchases in the past, but I'm so glad I gave it a shot for buying my new phone. Not only was it quick and hassle-free, but I got an amazing deal that I wouldn't have found anywhere else."
+  },
+  {
+    "id": "14",
+    "name": "Pierre Dubois",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "I was pleasantly surprised to find out that this website accepts ETH as payment for phones. Using cryptocurrency made the process so much smoother and faster, and I was able to get the best price on my new phone. I highly recommend it to anyone looking for a great deal and easy payment options."
+  },
+  {
+    "id": "15",
+    "name": "Charlotte Rousseau",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "I recently bought a new phone using ETH and got the best deal possible. The process was seamless and I couldn't be happier with my purchase. If you're looking for a great deal on a phone, using ETH is definitely the way to go!"
+  },
+  {
+    "id": "16",
+    "name": "Camille Lefebvre",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "Buying a phone with ETH was a breeze, and I was able to score an amazing deal. I'm so impressed with the ease of use and the low fees associated with this payment method. I highly recommend it!"
+  },
+  {
+    "id": "17",
+    "name": "Emmanuelle Bouchard",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "Using ETH to buy my new phone was the best decision I could have made. The process was fast and efficient, and I got an unbeatable deal. I will definitely be using this payment method for future purchases!"
+  },
+  {
+    "id": "18",
+    "name": "Isabel Martinez",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "I bought a new gaming PC from this website and paid with ETH. Not only did I get an amazing deal, but the process was fast and secure. I would definitely recommend this site to anyone looking to make a purchase with cryptocurrency."
+  },
+  {
+    "id": "19",
+    "name": "Carlos Rodriguez",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": " I was looking for a new camera and came across this website that accepts ETH as payment. I was pleasantly surprised at how much I was able to save compared to other retailers. I'm very happy with my purchase and would definitely use this site again."
+  },
+  {
+    "id": "20",
+    "name": "Javier Fernandez",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "I recently purchased a new smartwatch using ETH from this website and was blown away by the amazing deal I got. The watch arrived quickly and was exactly as described. I will definitely be using this site again for future purchases."
+  },
+  {
+    "id": "21",
+    "name": "Carmen Gonzalez",
+    "designation": "Designer",
+    "image": "/assets/images/users/user_img4.jpg",
+    "content": "I wanted to upgrade my home entertainment system and found this website that accepted ETH as payment. I was able to get an amazing deal on a new TV, sound system, and streaming device. The checkout process was quick and easy, and my items arrived in perfect condition. I will definitely be using this site again in the future."
+  }
+]
