@@ -8,6 +8,13 @@ const productSchema = new mongoose.Schema({
     required: true,
     trim: true
   },
+    id: {
+    type: String,
+    maxlength: 555,
+    minlength: 2,
+    required: true,
+    trim: true
+  },
   sku: {
     type: String,
     maxlength: 555,
