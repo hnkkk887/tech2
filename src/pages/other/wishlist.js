@@ -74,6 +74,7 @@ const Wishlist = () => {
                               <Link href={"/shop/product-basic/" + product.slug}>
                                 <img
                                   src={product.thumbImage[0]}
+                                  style={{ objectFit: "contain", height: "120px" }}
                                   alt="product1"
                                 />
                               </Link>
