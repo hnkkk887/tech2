@@ -34,7 +34,7 @@ const ProductDescriptionTab = ({ product }) => {
           </Nav.Item>
           <Nav.Item>
             <Nav.Link eventKey="reviews">
-              REVIEWS {product.ratingCount ? `(${product.ratingCount})` : ""}
+              REVIEWS
             </Nav.Link>
           </Nav.Item>
         </Nav>
@@ -60,7 +60,7 @@ const ProductDescriptionTab = ({ product }) => {
             <div className="product-description-tab__review">
               <div className="comments">
                 <h5 className="product-tab-title">
-                  {product.ratingCount} Review For <span>{product.name}</span>
+                  Review For <span>{product.name}</span>
                 </h5>
                 <ul className="list-none comment-list mt-4">
                   {product.reviews.length 
