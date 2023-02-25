@@ -47,7 +47,11 @@ const MiniCart = () => {
                   <div className="single-item">
                     <div className="single-item__image">
                       <Link href={"/shop/product-basic/" + product.slug}>
-                        <img src={product.thumbImage[0]} alt="cart_thumb1" />
+                        <img 
+                          style={{ objectFit: "contain", height: "80px" }}
+                          src={product.thumbImage[0]} 
+                          alt="cart_thumb1" 
+                        />
                       </Link>
                     </div>
                     <div className="single-item__content">
