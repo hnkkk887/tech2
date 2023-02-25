@@ -38,15 +38,15 @@ const HeroSliderTwo = ({ heroSliderData }) => {
                       <div className="hero-slider__content-wrapper hero-slider__content-wrapper--round-space">
                         <Col lg={8}>
                           <div className="hero-slider__content overflow-hidden">
-                            <h5 className="mb-3 font-weight-light sub-title">
+                            <h5 className="mb-3 font-weight-light sub-title" style={{ backgroundColor: "#fff", display: "inline-block", padding: "5px" }}>
                               {single.subtitle}
                             </h5>
-                            <h2 className="space-mb--20 title">
+                            <h2 className="space-mb--20 title" style={{ backgroundColor: "#fff", display: "inline-block", padding: "5px" }}>
                               {single.title}
                             </h2>
                             <Link
                               href={single.url}
-                              className="btn btn-fill-out rounded-0 text-uppercase slider-link">
+                              className="btn btn-primary rounded-0 text-uppercase slider-link">
                               
                                 Shop Now
                               
