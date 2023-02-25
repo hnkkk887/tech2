@@ -197,12 +197,12 @@ const ProductGridList = ({
             <div className="product-price">
               {product.discount ? (
                 <Fragment>
-                  <span className="price">${discountedPrice}</span>
-                  <del>${productPrice}</del>
+                  <span className="price">{sign === "eur" ? "Є" : "£"}{discountedPrice}</span>
+                  <del>{sign === "eur" ? "Є" : "£"}{productPrice}</del>
                   <span className="on-sale">{product.discount}% Off</span>
                 </Fragment>
               ) : (
-                <span className="price">${productPrice}</span>
+                <span className="price">{sign === "eur" ? "Є" : "£"}{productPrice}</span>
               )}
             </div>
             <div className="rating-wrap">
