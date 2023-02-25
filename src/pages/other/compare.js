@@ -50,6 +50,7 @@ const Compare = () => {
                               <td className="row_img" key={key}>
                                 <img
                                   src={product.thumbImage[0]}
+                                  style={{ objectFit: "contain", height: "240px" }}
                                   alt="compare-img"
                                 />
                               </td>
