@@ -8,7 +8,7 @@ const BannerFive = ({ containerClass }) => {
         <Row>
           <Col md={4}>
             <div className="sale-banner px-0">
-              <Link href="/shop/grid-left-sidebar" className="hover-effect">
+              <Link href="/shop/product-basic/" className="hover-effect">
 
                 <img
                   src="/assets/images/banner/shop_banner_img7.jpg"
@@ -20,7 +20,7 @@ const BannerFive = ({ containerClass }) => {
           </Col>
           <Col md={4}>
             <div className="sale-banner px-0">
-              <Link href="/shop/grid-left-sidebar" className="hover-effect">
+              <Link href="/shop/product-basic/" className="hover-effect">
 
                 <img
                   src="/assets/images/banner/shop_banner_img8.jpg"
@@ -32,7 +32,7 @@ const BannerFive = ({ containerClass }) => {
           </Col>
           <Col md={4}>
             <div className="sale-banner px-0">
-              <Link href="/shop/grid-left-sidebar" className="hover-effect">
+              <Link href="/shop/product-basic/" className="hover-effect">
 
                 <img
                   src="/assets/images/banner/shop_banner_img9.jpg"
