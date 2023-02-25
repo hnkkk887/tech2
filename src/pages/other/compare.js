@@ -85,8 +85,8 @@ const Compare = () => {
 
                           const discountedPrice = v;
 
-                            const productPrice = product.price.toFixed(2);
-                            return (
+                          const productPrice = sign === "eur" ? product.price.toFixed(2) : product.priceGBP.toFixed(2);
+                          return (
                               <td className="product-price" key={key}>
                                 {product.discount ? (
                                   <Fragment>
