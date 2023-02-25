@@ -70,11 +70,11 @@ const ProductDescriptionTab = ({ product }) => {
                       </div>
 
                       <div className="comment-block">
-                        <div className="rating-wrap">
-                          <div className="rating">
-                            <ProductRating ratingValue={p.starts} />
-                          </div>
-                      </div>
+                        {/* <div className="rating-wrap">
+                              <div className="rating">
+                                <ProductRating ratingValue={p.stars} />
+                              </div>
+                            </div> */}
                       <p className="customer-meta">
                         <span className="review-author">{p.name}</span>
                         <span className="comment-date">{p.date}</span>
