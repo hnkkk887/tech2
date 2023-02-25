@@ -11,10 +11,10 @@ async function handler(req, res) {
       const productFeat = await Product.find({ featured: true }).limit(8);
 
       // new
-      const productNew = await Product.find({ new: true}).sort({"saleCount": 1}).skip(8).limit(8);
+      const productNew = await Product.find({ new: true}).sort({"saleCount": -1}).skip(8).limit(8);
 
       // popular
-      const productPopular = await Product.find().sort({"saleCount": 1}).limit(8);
+      const productPopular = await Product.find().sort({"saleCount": -1}).limit(8);
 
       // discount
       const productDiscount = await Product.find({ discount: { $gt: 15 } }).limit(8);
