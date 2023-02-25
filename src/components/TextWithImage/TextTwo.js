@@ -54,7 +54,7 @@ const TextWithImageOne = () => {
               Buying cryptocurrency with MetaMask has never been easier. Just head on over to the "Buy" button to get started. 
             </p>
             <p>
-              You can check this youtube tutorial on how to setup metamask: <a href="https://www.youtube.com/watch?v=afATAw7iuUM"> https://www.youtube.com/watch?v=afATAw7iuUM </a>            
+              You can check this youtube tutorial on how to buy eth using your credit card using the MetaMask wallet: <a href="https://www.youtube.com/watch?v=afATAw7iuUM"> https://www.youtube.com/watch?v=afATAw7iuUM </a>            
             </p>            
           </Col>        
         </Row>
