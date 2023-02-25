@@ -8,10 +8,10 @@ const BannerSix = () => {
         <Row>
           <Col lg={12}>
             <div className="sale-banner mb-0">
-              <Link href="/shop/grid-left-sidebar" className="hover-effect">
+              <Link href="shop/product-basic/63f1018f9c1789a33df5845a" className="hover-effect">
 
                 <img
-                  src="/assets/images/banner/shop_banner_img11.png"
+                  src="/assets/images/banner/shop_banner_img11.jpg"
                   alt="shop_banner_img11"
                 />
 
