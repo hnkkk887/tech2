@@ -2,22 +2,22 @@
   {
     "id": "1",
     "backgroundImage": "/assets/images/hero-slider/five/1.jpg",
-    "subtitle": "20% off",
-    "title": "Dual Camera 20MP",
-    "url": "/shop/grid-left-sidebar"
+    "subtitle": "20% off ",
+    "title": "Samsung Galaxy S23+",
+    "url": "/shop/product-basic/63f00cf771cdcc8e9f0d3c78"
   },
   {
     "id": "2",
     "backgroundImage": "/assets/images/hero-slider/five/2.jpg",
     "subtitle": "20% off",
-    "title": "Smart Watches",
-    "url": "/shop/grid-left-sidebar"
+    "title": "New Apple iPhone 14 ",
+    "url": "/shop/product-basic/"
   },
   {
     "id": "3",
     "backgroundImage": "/assets/images/hero-slider/five/3.jpg",
-    "subtitle": "Taking your Viewing Experience to Next Level",
-    "title": "Beat Headphone",
-    "url": "/shop/grid-left-sidebar"
+    "subtitle": "20% off",
+    "title": "PlayStation 5 Console",
+    "url": "/shop/product-basic/"
   }
 ]
