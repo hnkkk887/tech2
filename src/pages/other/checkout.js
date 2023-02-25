@@ -71,7 +71,7 @@ const Checkout = () => {
       })
     }
 
-    if (e.target.name === "bank" && cartTotalPrice < 499) {
+    if (e.target.name === "bank" && cartTotalPrice < 300) {
       return;
     }
     setPaySelector({ ...STATE_DEFAULT, [e.target.name]: true });
@@ -524,10 +524,10 @@ const Checkout = () => {
                         <label
                           style={{ marginLeft: "10px" }}
                         >
-                          Direct Bank Transfer
+                          Bank Transfer
                         </label>
                         <p data-method="option3" className="payment-text">
-                          Wire transfers are available on orders over {sign === "eur" ? "Є" : "£"} 500.{" "}
+                          Bank transfers are available on orders over {sign === "eur" ? "Є" : "£"} 300.{" "}
                         </p>
                       </div>
                       <div className="custom-radio space-mb--20">
