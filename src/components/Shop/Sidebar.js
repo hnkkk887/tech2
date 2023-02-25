@@ -11,6 +11,7 @@ import {
   setActiveSort
 } from "../../lib/product";
 import { ProductRating } from "../../components/Product";
+import { useRouter } from 'next/router';
 
 const Sidebar = ({ products, getSortParams }) => {
   const categories = ["computer", "mobile&tablet", "camera", "accessories", "gaming", "watches", "tv", "cryptocurrency mining"];
@@ -20,6 +21,10 @@ const Sidebar = ({ products, getSortParams }) => {
   const tags = getIndividualTags(products);
   const [popularProducts, setPopularProducts] = useState([]);
   // const popularProducts = getProducts(products, "computer", "popular", 3);
+  const router = useRouter();
+
+  const { locale } = router;
+  const sign = locale === "eur" ? "eur" : "gbr";
 
   useEffect(() => {
     if(products.length) {
@@ -129,11 +134,21 @@ const Sidebar = ({ products, getSortParams }) => {
           <ul className="widget-recent-post-wrapper">
             {popularProducts &&
               popularProducts.map((product, key) => {
-                const discountedPrice = getDiscountPrice(
+                let v = getDiscountPrice(
                   product.price,
                   product.discount
                 ).toFixed(2);
-                const productPrice = product.price.toFixed(2);
+
+                if(sign !== "eur") {
+                  v = getDiscountPrice(
+                    product.priceGBP,
+                    product.discount
+                  ).toFixed(2);    
+                }
+
+                const discountedPrice = v;
+
+                const productPrice = sign === "eur" ? product.price.toFixed(2) : product.priceGBP.toFixed(2);
                 return (
                   <li className="widget-product-post" key={key}>
                     <div className="widget-product-post__image">
@@ -150,11 +165,11 @@ const Sidebar = ({ products, getSortParams }) => {
                       <div className="product-price">
                         {product.discount ? (
                           <Fragment>
-                            <span className="price">${discountedPrice}</span>
-                            <del>${productPrice}</del>
+                            <span className="price">{sign === "eur" ? "Є" : "£"}{discountedPrice}</span>
+                            <del>{sign === "eur" ? "Є" : "£"}{productPrice}</del>
                           </Fragment>
                         ) : (
-                          <span className="price">${productPrice}</span>
+                          <span className="price">{sign === "eur" ? "Є" : "£"}{productPrice}</span>
                         )}
                       </div>
                       <div className="rating-wrap">
@@ -198,16 +213,14 @@ const Sidebar = ({ products, getSortParams }) => {
         <div className="shop-banner">
           <div className="banner-img">
             <img
-              src="/assets/images/banner/sidebar_banner_img.jpg"
+              src="/assets/images/banner/shop_banner_img11.jpg"
               alt="sidebar_banner_img"
             />
           </div>
           <div className="shop-bn-content2">
-            <h5 className="text-uppercase shop-subtitle">New Collection</h5>
-            <h3 className="text-uppercase shop-title">Sale 30% Off</h3>
             <Link
-              href="/shop/grid-left-sidebar"
-              className="btn btn-white rounded-0 btn-sm text-uppercase">
+              href="/shop/product-basic/63f1018f9c1789a33df5845a"
+              className="btn btn-primary rounded-0 btn-sm text-uppercase">
                 Shop Now
             </Link>
           </div>
