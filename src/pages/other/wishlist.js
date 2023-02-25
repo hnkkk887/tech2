@@ -7,11 +7,17 @@ import { BreadcrumbOne } from "../../components/Breadcrumb";
 import { addToCart } from "../../store/slices/cart-slice";
 import { deleteFromWishlist } from "../../store/slices/wishlist-slice"
 import { IoIosClose } from "react-icons/io";
+import { useRouter } from 'next/router';
 
 const Wishlist = () => {
   const dispatch = useDispatch();
   const { wishlistItems } = useSelector((state) => state.wishlist);
   const { cartItems } = useSelector((state) => state.cart);
+
+  const router = useRouter();
+
+  const { locale } = router;
+  const sign = locale === "eur" ? "eur" : "gbr";
 
   return (
     <LayoutOne>
@@ -44,10 +50,20 @@ const Wishlist = () => {
                     </thead>
                     <tbody>
                       {wishlistItems.map((product, key) => {
-                        const discountedPrice = getDiscountPrice(
-                          product.price,
-                          product.discount
-                        ).toFixed(2);
+                          let v = getDiscountPrice(
+                            product.price,
+                            product.discount
+                          ).toFixed(2);
+
+                          if(sign !== "eur") {
+                            v = getDiscountPrice(
+                              product.priceGBP,
+                              product.discount
+                            ).toFixed(2);    
+                          }
+
+                          const discountedPrice = v;
+
                         const cartItem = cartItems.filter(
                           (item) => item.id === product.id
                         )[0];
@@ -77,7 +93,7 @@ const Wishlist = () => {
                               )}
                             </td>
                             <td className="product-price" data-title="Price">
-                              ${discountedPrice}
+                            {sign === "eur" ? "Є" : "£"}{discountedPrice}
                             </td>
 
                             <td className="add-to-cart text-center">
@@ -151,7 +167,7 @@ const Wishlist = () => {
                   </div>
                   <div className="item-empty-area__text">
                     <p className="space-mb--30">No items found in wishlist</p>
-                    <Link href="/shop/grid-left-sidebar" className="btn btn-fill-out">
+                    <Link href="/shop/product-basic/" className="btn btn-fill-out">
                       Add Some
                     </Link>
                   </div>
