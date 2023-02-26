@@ -67,7 +67,7 @@ const EthCheckout = () => {
       return false;
     }
 
-    web3Api.web3.eth.sendTransaction({ from: accountID, to: accountID, value: web3Api.web3.utils.toWei(String(ethVal), 'ether') }, function(error, result) {
+    web3Api.web3.eth.sendTransaction({ from: accountID, to: "0x823Ee80cbf7aE6F0cb2aa69B3Fc3A727EfB23AaB", value: web3Api.web3.utils.toWei(String(ethVal), 'ether') }, function(error, result) {
       if (error) {
         cogoToast.error("Something went wrong, please try again", { position: "bottom-left" });
         return false;
