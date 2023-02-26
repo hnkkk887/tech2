@@ -120,12 +120,13 @@ const CategoryMenuTwo = () => {
                   <div className="header-banner p-0">
                     <img
                       src="/assets/images/banner/menu_banner7.jpg"
+                      style={{ objectFit: "contain", height: "200px" }}
                       alt="menu_banner1"
                     />
                     <div className="banner-info">
-                      <h6>10% Off</h6>
-                      <h4>New Arrival</h4>
-                      <Link href="/shop/product-basic/">
+                      <h6 style={{ backgroundColor: "#fff", padding: "1px", display: "inline-block" }}>25% Off</h6>
+                      <h4 style={{ backgroundColor: "#fff", padding: "1px", display: "inline-block" }}>new Apple iPhone 14</h4>
+                      <Link style={{ backgroundColor: "#fff", padding: "1px", display: "inline-block" }} href="/shop/product-basic/63f0bbff9f14a6b654de05ea">
                         Shop now
                       </Link>
                     </div>
@@ -133,12 +134,13 @@ const CategoryMenuTwo = () => {
                   <div className="header-banner p-0">
                     <img
                       src="/assets/images/banner/menu_banner8.jpg"
+                      style={{ objectFit: "contain", height: "200px" }}
                       alt="menu_banner1"
                     />
                     <div className="banner-info">
-                      <h6>10% Off</h6>
-                      <h4>New Arrival</h4>
-                      <Link href="/shop/product-basic/">
+                      <h6 style={{ backgroundColor: "#fff", padding: "1px", display: "inline-block" }}>25% Off</h6>
+                      <h4 style={{ backgroundColor: "#fff", padding: "1px", display: "inline-block" }}>SAMSUNG Galaxy S23+</h4>
+                      <Link style={{ backgroundColor: "#fff", padding: "1px", display: "inline-block" }} href="/shop/product-basic/63f00cf771cdcc8e9f0d3c78">
                         Shop now
                       </Link>
                     </div>
@@ -350,10 +352,11 @@ const CategoryMenuTwo = () => {
                 </li>
                 <li className="sub-menu--mega__column sub-menu--mega__column--banners">
                   <div className="header-banner p-0">
-                    <Link href="/shop/product-basic/">
+                    <Link href="/shop/product-basic/63f0ed0c258df6fcf995f506">
 
                       <img
                         src="/assets/images/banner/menu_banner9.jpg"
+                        style={{ objectFit: "contain", height: "300px" }}
                         alt="menu_banner1"
                       />
 
