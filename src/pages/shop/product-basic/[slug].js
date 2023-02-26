@@ -42,7 +42,7 @@ const ProductBasic = () => {
       product.discount
     ).toFixed(2);
 
-    productPrice = product.price.toFixed(2);
+    productPrice = locale === "eur" ? product.price.toFixed(2) : product.priceGBP.toFixed(2);
   }
 
   const cartItem = cartItems.find(
