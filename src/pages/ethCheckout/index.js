@@ -327,7 +327,7 @@ const EthCheckout = () => {
                         required
                         className="form-control"
                         name="phone"
-                        placeholder="Phone"
+                        placeholder="Phone *"
                         value={data.phone}
                         onChange={handleChange}
                       />
@@ -341,7 +341,7 @@ const EthCheckout = () => {
                         required
                         className="form-control"
                         name="email"
-                        placeholder="Email address"
+                        placeholder="Email address *"
                         value={data.email}
                         onChange={handleChange}
                       />
