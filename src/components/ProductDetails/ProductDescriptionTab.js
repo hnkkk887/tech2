@@ -32,11 +32,11 @@ const ProductDescriptionTab = ({ product }) => {
           <Nav.Item>
             <Nav.Link eventKey="additionalInfo">ADDITIONAL INFO</Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          {/* <Nav.Item>
             <Nav.Link eventKey="reviews">
               REVIEWS
             </Nav.Link>
-          </Nav.Item>
+          </Nav.Item> */}
         </Nav>
         <Tab.Content>
           <Tab.Pane eventKey="description">
@@ -56,7 +56,7 @@ const ProductDescriptionTab = ({ product }) => {
               </table>
             </div>
           </Tab.Pane>
-          <Tab.Pane eventKey="reviews">
+          {/* <Tab.Pane eventKey="reviews">
             <div className="product-description-tab__review">
               <div className="comments">
                 <h5 className="product-tab-title">
@@ -70,11 +70,11 @@ const ProductDescriptionTab = ({ product }) => {
                       </div>
 
                       <div className="comment-block">
-                        {/* <div className="rating-wrap">
+                        <div className="rating-wrap">
                               <div className="rating">
                                 <ProductRating ratingValue={p.stars} />
                               </div>
-                            </div> */}
+                            </div>
                       <p className="customer-meta">
                         <span className="review-author">{p.name}</span>
                         <span className="comment-date">{p.date}</span>
@@ -88,7 +88,7 @@ const ProductDescriptionTab = ({ product }) => {
                     </li>)
                     : <span>No customer reviews</span>
                   }
-                  {/* <li>
+                  <li>
                     <div className="comment-img">
                       <img src="/assets/images/users/user1.jpg" alt="user1" />
                     </div>
@@ -111,7 +111,7 @@ const ProductDescriptionTab = ({ product }) => {
                         </p>
                       </div>
                     </div>
-                  </li> */}
+                  </li>
 
                 </ul>
               </div>
@@ -173,7 +173,7 @@ const ProductDescriptionTab = ({ product }) => {
                 </form>
               </div>
             </div>
-          </Tab.Pane>
+          </Tab.Pane> */}
         </Tab.Content>
       </Tab.Container>
     </div>
