@@ -92,6 +92,8 @@ const Checkout = () => {
   }
 
   function sendEth() {
+    console.log(accountID)
+
     if(!accountID) {
       cogoToast.error("In order to pay using eth you have to login into your MetaMask wallet", { position: "bottom-left" });
       return false;
@@ -351,7 +353,7 @@ const Checkout = () => {
                         required
                         className="form-control"
                         name="phone"
-                        placeholder="Phone *"
+                        placeholder="Phone"
                         value={data.phone}
                         onChange={handleChange}
                       />
@@ -365,7 +367,7 @@ const Checkout = () => {
                         required
                         className="form-control"
                         name="email"
-                        placeholder="Email address *"
+                        placeholder="Email address"
                         value={data.email}
                         onChange={handleChange}
                       />
@@ -387,6 +389,35 @@ const Checkout = () => {
                   {paySelector.cc 
                   ? <><div className="heading-s1 space-mb--20">
                     <h4>Credit Card</h4>
+                      <Container>
+                        <Col lg={4} style={{marginTop: "10px"}}>
+                        <ul className="footer-payment text-center text-lg-end">
+                  <li>
+                    <a href="#">
+                      <img src="/assets/images/icons/visa.png" alt="visa" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="/assets/images/icons/discover.png"
+                        alt="discover"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="/assets/images/icons/master_card.png"
+                        alt="master_card"
+                      />
+                    </a>
+                  </li>
+
+                 
+                </ul>
+                        </Col>
+                      </Container>
                   </div>
                   <div className="mb-3">
                     <label style={{ marginBottom: "5px" }}>
@@ -524,10 +555,10 @@ const Checkout = () => {
                         <label
                           style={{ marginLeft: "10px" }}
                         >
-                          Bank Transfer
+                        Payment via Bank Transfer
                         </label>
                         <p data-method="option3" className="payment-text">
-                          Bank transfers are available on orders over {sign === "eur" ? "Є" : "£"} 300.{" "}
+                          Bank transfers are available on orders over {sign === "eur" ? "Є" : "£"} 300. After you’ve placed your order, we will send you an email with the payment informations. If we do not receive your payment within 10 days, your order will be canceled {" "}
                         </p>
                       </div>
                       <div className="custom-radio space-mb--20">
@@ -544,7 +575,7 @@ const Checkout = () => {
                           Ethereum
                         </label>
                         <p data-method="option4" className="payment-text">
-                          Pay using eth cryptocurrency for an extra 20% discount. You can buy eth using your credit card in less than 2 min, you only have to install MetaMask. the leading self-custodial wallet. After you install and create your MetaMask account, you have to refresh the website. <Link href="/other/eth"> learn more </Link>
+                          Pay using eth cryptocurrency for an extra 20% discount. To pay using eth, you need a crypto wallet like MetaMask. By buying with ETH, you can enjoy unbeatable deals that are not available through traditional payment methods. This is because using ETH for purchases allows us to save on costly transaction fees and pass those savings onto you. Additionally, because ETH is not controlled by any central authority, there are no middlemen or intermediaries to add unnecessary costs to your transactions. <Link href="/other/eth"> learn more </Link>
                         </p>
                       </div>
                       <div className="custom-radio space-mb--20">
