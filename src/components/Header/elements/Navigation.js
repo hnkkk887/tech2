@@ -191,11 +191,11 @@ const Navigation = ({ positionClass }) => {
           Affiliate Program
           </Link>
         </li>            
-        <li>
+        {/* <li>
           <Link href="/other/eth" className="nav-link">
           How To Buy Using Ethereum
           </Link>
-        </li>        
+        </li>         */}
         <li>
           <Link href="/other/about-us" className="nav-link">
             About Us
