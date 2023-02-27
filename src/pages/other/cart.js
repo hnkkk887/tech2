@@ -315,7 +315,7 @@ const Cart = () => {
                             </td>
                           </tr>                          
                           : null }
-                          <tr>
+                          {/* <tr>
                             <td className="cart-total-label">Pay using eth cryptocurrency for an extra 20% discount. <Link href="/other/eth"> learn more </Link></td>
                             <td className="cart-total-amount">
                               <input
@@ -326,7 +326,7 @@ const Cart = () => {
                                 onChange={() => setEthCheck(prev => !prev)}
                               />
                             </td>
-                          </tr>
+                          </tr> */}
 
                         </tbody>
                       </table>
