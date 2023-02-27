@@ -43,17 +43,14 @@ const FooterOne = () => {
                 <div className="widget">
                   <div className="footer-logo">
                     <Link href="/">
-                      <h1>e-techeth</h1>
+                      <h1>e-electro</h1>
 
                       {/* <img src="/assets/images/logo_light.png" alt="logo" /> */}
 
                     </Link>
                   </div>
                   <p>
-                    We strive to provide our customers with the best possible deals and value for their money. That's why we are excited to offer the option to purchase using ETH, or Ethereum, a popular cryptocurrency.
-                  </p>
-                  <p>
-                    By buying with ETH, you can enjoy unbeatable deals that are not available through traditional payment methods. This is because using ETH for purchases allows us to save on costly transaction fees and pass those savings onto you. Additionally, because ETH is not controlled by any central authority, there are no middlemen or intermediaries to add unnecessary costs to your transactions.
+                    We strive to provide our customers with the best possible deals. We understand that customers want to get the most value for their money, so we work hard to provide competitive pricing and discounts on our products. We also regularly update our inventory with new products and special promotions to make sure our customers have access to the latest and most affordable products. Our goal is to provide a positive shopping experience for our customers by offering them the best deals and a wide variety of products to choose from. 
                   </p>
                 </div>
                 {/* <div className="widget">
