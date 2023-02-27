@@ -83,9 +83,9 @@ const ProductDescription = ({
           <li>
             <AiOutlineReload /> 30 Days Return Policy
           </li>
-          <li>
+          {/* <li>
             <FaEthereum /> Because there are no bank fees or additional taxes, you can buy this product using Ethereum for another 20% discount
-          </li>          
+          </li>           */}
           <li>
             <FaRegHandshake /> Join our affiliate program, for every item you sell you will receive a number of points. At 1000 points you will win a 10% discount coupon
           </li>
