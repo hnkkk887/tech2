@@ -227,7 +227,7 @@ const Checkout = () => {
         </ol>
       </BreadcrumbOne>
       <div className="checkout-content space-pt--r100 space-pb--r100">
-      {accountID && paySelector.eth ? null : <Button variant="dark" style={{display: "block", margin: "0 auto", marginBottom: "10px"}} onClick={connectMetamask}>Connect Metamask</Button>}
+      {accountID && !paySelector.eth ? null : <Button variant="dark" style={{display: "block", margin: "0 auto", marginBottom: "10px"}} onClick={connectMetamask}>Connect Metamask</Button>}
 
         <Container>
           {cartItems && cartItems.length >= 1 ? (
