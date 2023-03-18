@@ -54,7 +54,7 @@ const HeaderTwo = ({ navPositionClass }) => {
           <div className="d-flex justify-content-between align-items-center">
             {/* logo */}
             <Link href="/" className="navbar-brand pt-0 pb-0">
-              <h1><span style={{color: "#ff324d"}}>e-</span>techeth</h1>
+              <h1><span style={{color: "#ff324d"}}>e-</span>plazacloud</h1>
               {/* <img
                 className="logo-light"
                 src="/assets/images/logo_light.png"
