@@ -43,7 +43,7 @@ const FooterOne = () => {
                 <div className="widget">
                   <div className="footer-logo">
                     <Link href="/">
-                      <h1>e-electro</h1>
+                      <h1>e-plazacloud</h1>
 
                       {/* <img src="/assets/images/logo_light.png" alt="logo" /> */}
 
