@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import { getDiscountPrice } from "../../lib/product";
 import { IoMdCash } from "react-icons/io";
@@ -77,6 +77,31 @@ const Checkout = () => {
     setPaySelector({ ...STATE_DEFAULT, [e.target.name]: true });
   }
 
+  async function connectMetamask() {
+    try {
+      const provider = await detectEtherumProvider();
+
+      // Request access to the user's accounts
+      const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+      setAccount(accounts[0]);
+
+      // Create a Web3 instance using the user's provider
+      setAccountListener(provider);
+      setWeb3Api({
+        web3: new Web3(provider),
+        provider,
+        isProviderLoaded: true
+      });
+      // const web3 = new Web3(window.ethereum);
+      // console.log('Web3 instance:', web3);
+    } catch (error) {
+      cogoToast.error("In order to pay using eth you have to install an ethereum wallet like MetaMask", { position: "bottom-left" });
+      return false;    
+    }
+
+    return true;
+  }
+  
   async function ethTransform() {
     let p = getDiscountPrice(cartTotalPrice, 25);
 
@@ -202,6 +227,8 @@ const Checkout = () => {
         </ol>
       </BreadcrumbOne>
       <div className="checkout-content space-pt--r100 space-pb--r100">
+      {accountID && paySelector.eth ? null : <Button variant="dark" style={{display: "block", margin: "0 auto", marginBottom: "10px"}} onClick={connectMetamask}>Connect Metamask</Button>}
+
         <Container>
           {cartItems && cartItems.length >= 1 ? (
             <Row>
