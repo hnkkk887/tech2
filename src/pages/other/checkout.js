@@ -602,7 +602,7 @@ const Checkout = () => {
                           Ethereum
                         </label>
                         <p data-method="option4" className="payment-text">
-                          Pay using eth cryptocurrency for an extra 20% discount. To pay using eth, you need a crypto wallet like MetaMask. By buying with ETH, you can enjoy unbeatable deals that are not available through traditional payment methods. This is because using ETH for purchases allows us to save on costly transaction fees and pass those savings onto you. Additionally, because ETH is not controlled by any central authority, there are no middlemen or intermediaries to add unnecessary costs to your transactions. <Link href="/other/eth"> learn more </Link>
+                          To pay using eth, you need a crypto wallet like MetaMask. By buying with ETH, you can enjoy unbeatable deals that are not available through traditional payment methods. This is because using ETH for purchases allows us to save on costly transaction fees and pass those savings onto you. Additionally, because ETH is not controlled by any central authority, there are no middlemen or intermediaries to add unnecessary costs to your transactions. <Link href="/other/eth"> learn more </Link>
                         </p>
                       </div>
                       <div className="custom-radio space-mb--20">
