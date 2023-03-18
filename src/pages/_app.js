@@ -35,7 +35,7 @@ const MyApp = ({Component, ...rest}) => {
   return (
     <Fragment>
       <Head>
-        <title>e-techeth</title>
+        <title>e-plazacloud</title>
         <meta
           name="description"
           content=""
